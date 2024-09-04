@@ -1,0 +1,42 @@
+/* Styling for the entire navbar */
+.navbar {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e9ecef; /* Optional: Add a border at the bottom */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px; /* Spacing between nav items */
+    color: #ffffff !important; /* White color for text */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa !important; /* Lighter color on hover */
+    background-color: transparent; /* Ensure no background on hover */
+  }
+  
+  .navbar-toggler {
+    border-color: #ffffff; /* White border for the toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 6h20M5 12h20M5 18h20" /%3E%3C/svg%3E');
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end; /* Align nav items to the right */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold; /* Highlight active link */
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: #ffffff; /* Ensure brand color is white */
+  }
+  

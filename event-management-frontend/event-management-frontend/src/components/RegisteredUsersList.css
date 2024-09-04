@@ -1,0 +1,38 @@
+/* src/components/RegisteredUsersList.css */
+
+.registered-users-list-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registered-users-list-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .registered-users-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .registered-user-item {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registered-user-item p {
+    margin: 5px 0;
+  }
+  
+  .registered-user-item p strong {
+    color: #333;
+  }
+  
