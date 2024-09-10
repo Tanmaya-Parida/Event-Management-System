@@ -11,6 +11,17 @@ const CreateEvent = () => {
   const [category, setCategory] = useState('');
   const navigate = useNavigate();
 
+  // Get today's date in YYYY-MM-DDTHH:MM format for the datetime-local input's min attribute
+  const getCurrentDateTime = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const hours = String(today.getHours()).padStart(2, '0');
+    const minutes = String(today.getMinutes()).padStart(2, '0');
+    return `${year}-${month}-${day}T${hours}:${minutes}`;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -60,6 +71,7 @@ const CreateEvent = () => {
                     className="form-control"
                     value={eventDate}
                     onChange={(e) => setEventDate(e.target.value)}
+                    min={getCurrentDateTime()} // Set the minimum date to today
                     required
                   />
                 </div>
