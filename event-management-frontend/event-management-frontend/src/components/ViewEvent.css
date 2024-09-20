@@ -1,0 +1,33 @@
+.view-event-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.view-event-container h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.view-event-container p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.view-event-container strong {
+  color: #495057;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
