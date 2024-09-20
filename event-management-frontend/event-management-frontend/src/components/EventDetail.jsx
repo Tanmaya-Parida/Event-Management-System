@@ -1,4 +1,3 @@
-// src/components/EventDetail.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -15,7 +14,7 @@ const EventDetail = () => {
       .catch(error => console.error(error));
   }, [id]);
 
-  const handleBack = () => {
+  const handleBackToDashboard = () => {
     navigate('/admin-dashboard');
   };
 
@@ -31,7 +30,7 @@ const EventDetail = () => {
         <p><strong>Description:</strong> {event.description}</p>
         <p><strong>Date:</strong> {new Date(event.eventDate).toLocaleString()}</p>
         <p><strong>Category:</strong> {event.category}</p>
-        <button onClick={handleBack} className="back-button">Back to Dashboard</button>
+        <button onClick={handleBackToDashboard} className="btn btn-secondary mt-3">Back to Dashboard</button>
       </div>
     </div>
   );
