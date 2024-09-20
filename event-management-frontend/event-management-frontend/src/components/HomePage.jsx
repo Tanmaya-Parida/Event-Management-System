@@ -39,7 +39,6 @@ const HomePage = () => {
     let filtered = events;
 
     if (date) {
-      // Normalize dates to remove time components
       const selectedDay = new Date(date).setHours(0, 0, 0, 0);
       console.log('Selected Date (normalized):', new Date(selectedDay).toISOString());
 
