@@ -1,35 +1,78 @@
-/* src/components/EventDetail.css */
-
 .event-detail-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.event-detail h1 {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-detail-container h1 {
     text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.event-detail p {
-    margin-bottom: 0.5rem;
-}
-
-.back-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 1rem;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .event-detail {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .event-detail h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .event-detail p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .event-detail p strong {
+    color: #000;
+  }
+  
+  .btn-secondary {
     display: block;
-    width: 100%;
-}
-
-.back-button:hover {
-    opacity: 0.8;
-}
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  @media (max-width: 768px) {
+    .event-detail-container {
+      padding: 15px;
+    }
+  
+    .event-detail-container h1 {
+      font-size: 24px;
+    }
+  
+    .event-detail h2 {
+      font-size: 22px;
+    }
+  
+    .event-detail p {
+      font-size: 16px;
+    }
+  
+    .btn-secondary {
+      font-size: 14px;
+    }
+  }
+  
