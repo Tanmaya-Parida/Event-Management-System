@@ -24,15 +24,15 @@ const AdminDashboard = () => {
     navigate('/create-event');
   };
 
+  // Update handleViewEvent to navigate to EventDetail page
   const handleViewEvent = (id) => {
-    navigate(`/view-event/${id}`);
+    navigate(`/event-detail/${id}`); // Updated path
   };
 
   const handleViewRegistrations = (id) => {
     navigate(`/event-registrations/${id}`);
   };
 
-  // Add the navigate to edit-event page function
   const handleEditEvent = (id) => {
     navigate(`/edit-event/${id}`);
   };
